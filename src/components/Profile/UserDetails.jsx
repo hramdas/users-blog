@@ -1,22 +1,17 @@
+import { Divider } from '@mui/material'
 import React from 'react'
+import PersonalDetails from './PersonalDetails'
+import Address from './Address'
 
 export default function UserDetails({ user }) {
-  console.log("USER", user)
   return (
-    <div className="user-profile-page">
-      <div className="user-profile-header">
-        <div>Profile</div>
-        <div>{user?.name}</div>
-      </div>
-      <div>
+  
+      <div className="user-profile-body">
+        <PersonalDetails user={user} />
+        <Divider sx={{height:'100%'}} orientation="vertical" flexItem />
         <div>
-          dd
-        </div>
-        <div>
-          dd
-          dd
+         <Address address={user?.address} />
         </div>
       </div>
-    </div>
   )
 }
