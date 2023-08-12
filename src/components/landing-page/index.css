@@ -1,0 +1,43 @@
+.landing-page-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.users-list {
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px #dedede;
+  padding-bottom: 30px;
+}
+
+.users-list>#header {
+  background-color: rgba(239, 239, 239, 0.623);
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+}
+
+.users-list>ul {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.users-list>ul li {
+  align-items: center;
+}
+
+.users-list>ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.users-list>ul::-webkit-scrollbar-thumb {
+  background-color: rgb(210, 210, 210);
+  border-radius: 10px;
+}
+
+.users-list>div>p {
+  font-size: 30px;
+}

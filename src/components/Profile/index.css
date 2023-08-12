@@ -1,0 +1,44 @@
+.user-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+}
+
+.user-sidebar {
+  height: 100vh;
+  width: 250px;
+}
+
+.user-sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.user-sidebar ul hr {
+  border-color: rgb(132, 132, 132);
+  width: 200px;
+}
+
+.user-sidebar ul span {
+  font-size: 20px
+}
+
+.user-sidebar .selected-item {
+  background-color: white;
+  width: 28px;
+  height: 25px;
+  margin-right: -30px;
+  border-radius: 50% 0 0 50%;
+}
+
+.user-profile-page {
+  display: flex;
+  width: 100%;
+}
+
+.user-profile-header {
+  display: flex;
+  justify-content: space-between;
+}
